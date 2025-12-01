@@ -1,11 +1,14 @@
+// src/store/index.js
 import { configureStore } from "@reduxjs/toolkit";
+import authReducer from "./slices/authSlice"; 
+import cartReducer from "./slices/cartSlice";
+import productReducer from "./slices/productSlice";
 
-// Hiện tại chưa có reducer nào, để trống đã.
-// Thành viên A sẽ thêm authSlice, cartSlice sau.
 const store = configureStore({
-  reducer: {
-    // auth: authReducer,  <-- Để comment nhắc nhớ
-    // cart: cartReducer,
+   reducer: {
+   auth: authReducer, 
+    cart: cartReducer, 
+    products: productReducer,
   },
 });
 
