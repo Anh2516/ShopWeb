@@ -1,0 +1,57 @@
+.App {
+  min-height: 100vh;
+  background: var(--color-gray-50);
+}
+
+.main-content {
+  padding-top: 160px;
+  min-height: calc(100vh - 160px);
+  background: linear-gradient(180deg, var(--color-gray-50) 0%, var(--color-white) 100%);
+  padding-bottom: var(--spacing-12);
+}
+
+.back-button {
+  margin-bottom: var(--spacing-5);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  padding: var(--spacing-2) var(--spacing-4);
+  color: var(--color-gray-700);
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-base);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-sm);
+}
+
+.back-button:hover {
+  background-color: var(--color-gray-100);
+  color: var(--color-primary);
+  transform: translateX(-4px);
+}
+
+.loading {
+  text-align: center;
+  padding: var(--spacing-16);
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-600);
+}
+
+.error-message {
+  text-align: center;
+  padding: var(--spacing-5);
+  background: var(--color-danger-light);
+  color: #991b1b;
+  border-radius: var(--radius-lg);
+  margin: var(--spacing-5) 0;
+  border-left: 4px solid var(--color-danger);
+  font-weight: var(--font-weight-medium);
+}
+
+.empty-message {
+  text-align: center;
+  padding: var(--spacing-16);
+  color: var(--color-gray-500);
+  font-size: var(--font-size-lg);
+}
+
