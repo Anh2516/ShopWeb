@@ -1,0 +1,172 @@
+.page-title {
+  font-size: var(--font-size-4xl);
+  margin-bottom: var(--spacing-8);
+  text-align: center;
+  font-weight: var(--font-weight-bold);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  padding-bottom: var(--spacing-4);
+}
+
+.page-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  border-radius: var(--radius-full);
+}
+
+.products-filters {
+  margin-bottom: var(--spacing-8);
+  background: var(--color-white);
+  padding: var(--spacing-6);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-gray-200);
+}
+
+.filters-row {
+  display: flex;
+  gap: var(--spacing-4);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 250px;
+  max-width: 500px;
+  padding: var(--spacing-3) var(--spacing-4);
+  border: 2px solid var(--color-gray-300);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-base);
+  transition: all var(--transition-base);
+  background-color: var(--color-white);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary-lighter);
+}
+
+.search-input:hover {
+  border-color: var(--color-gray-400);
+}
+
+.category-select {
+  min-width: 200px;
+  padding: var(--spacing-3) var(--spacing-4);
+  border: 2px solid var(--color-gray-300);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-base);
+  background-color: var(--color-white);
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.category-select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary-lighter);
+}
+
+.category-select:hover {
+  border-color: var(--color-primary);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-4);
+  margin: var(--spacing-10) 0;
+}
+
+.product-description {
+  color: var(--color-gray-600);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--spacing-3);
+  line-height: var(--line-height-relaxed);
+}
+
+.product-stock {
+  color: var(--color-success);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--spacing-3);
+  font-weight: var(--font-weight-medium);
+}
+
+.best-seller-section {
+  margin-bottom: var(--spacing-10);
+  text-align: center;
+}
+
+.best-seller-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--spacing-6);
+  margin-top: var(--spacing-6);
+}
+
+.best-seller-card {
+  display: flex;
+  gap: var(--spacing-5);
+  align-items: center;
+  padding: var(--spacing-6);
+  border-radius: var(--radius-xl);
+  background: linear-gradient(135deg, #fff3d9 0%, #fffbf0 100%);
+  box-shadow: 0 8px 24px rgba(255, 193, 7, 0.25);
+  border: 2px solid rgba(255, 193, 7, 0.3);
+  transition: all var(--transition-base);
+}
+
+.best-seller-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(255, 193, 7, 0.35);
+}
+
+.best-seller-card img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 193, 7, 0.6);
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+}
+
+.best-seller-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+  align-items: flex-start;
+  flex: 1;
+}
+
+.best-seller-info h3 {
+  margin: 0;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-gray-900);
+}
+
+.best-seller-info p {
+  margin: 0;
+  color: var(--color-gray-600);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-sm);
+}
+
+.best-seller-info .btn {
+  padding: var(--spacing-2) var(--spacing-4);
+  font-size: var(--font-size-sm);
+  margin-top: var(--spacing-2);
+}
+
